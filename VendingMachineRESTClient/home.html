@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vending Machine</title>
+    <link href="css/bootstrap.css"
+    rel="stylesheet">
+  </head>
+  <body>
+<div class="container">
+  <h1>Vending Machine</h1>
+</div>
+<hr/>
+
+<ul class="list-group" id="errorMessages"></ul>
+
+
+<div class="col-md-12">
+  <h1>Items</h1>
+  <div id="itemRows" class="col-md-9"></div>
+</div>
+<hr/>
+
+<div class="col-md-12">
+  <h1>Total $ In</h1>
+  <form class="form-horizontal" role="form" id="add-money-form">
+
+
+    <div class="form-group">
+      <label for="money-entered" class="col-md-2 control-label">
+                            </label>
+      <div class="col-md-8">
+        <input type="text"
+                class="form-control"
+                id="money-entered"
+                placeholder="Money" readonly required/>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-md-offset-4 col-md-8">
+      <button type="button"
+
+              id="dollar-button"
+              class="btn-btn-default">
+              Add Dollar
+            </button>
+
+  </div>
+</div>
+<div class="form-group">
+  <div class="col-md-offset-4 col-md-8">
+    <button type="button"
+
+            id="quarter-button"
+            class="btn-btn-default">
+            Add Quarter
+          </button>
+
+</div>
+</div>
+<div class="form-group">
+  <div class="col-md-offset-4 col-md-8">
+    <button type="button"
+
+            id="dime-button"
+            class="btn-btn-default">
+            Add Dime
+          </button>
+
+</div>
+</div>
+<div class="form-group">
+  <div class="col-md-offset-4 col-md-8">
+    <button type="button"
+
+            id="nickel-button"
+            class="btn-btn-default">
+            Add Nickel
+          </button>
+
+</div>
+</div>
+
+
+</form>
+</div>
+<hr/>
+
+
+<div class="col-md-12">
+  <h1>Messages</h1>
+  <form class="form-horizontal" role="form" id="messages">
+    <div class="form-group">
+      <div class="col-md-8">
+        <input type="text"
+                class="form-control"
+                id="message"
+                placeholder="Welcome"  readonly required/>
+    </div>
+  </div>
+
+
+  <div class="form-group
+
+
+  <label for="item-id" class="col-md-2 control-label">
+                        Item:</label>
+    <div class="col-md-8">
+      <input type="text"
+              class="form-control"
+              id="item-id"
+              placeholder="Item Num" readonly required/>
+  </div>
+</div>
+
+
+
+<div class="form-group">
+  <div class="col-md-offset-4 col-md-8">
+    <button type="button"
+
+            id="make-purchase"
+            class="btn-btn-default">
+            Make Purchase
+          </button>
+
+</div>
+</div>
+
+
+  </form>
+
+
+
+</div>
+<hr/>
+
+
+<div class="col-md-12">
+  <h1>Change</h1>
+  <form class="form-horizontal" role="form" id="change">
+    <div class="form-group">
+      <div class="col-md-8">
+        <input type="text"
+                class="form-control"
+                id="change-output"
+                placeholder="Change" readonly />
+    </div>
+  </div>
+
+
+
+  <div class="form-group">
+    <div class="col-md-offset-4 col-md-8">
+      <button type="button"
+
+              id="change-return"
+              class="btn-btn-default">
+              Change Return
+            </button>
+
+  </div>
+  </div>
+
+  </form>
+
+
+</div>
+<hr/>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/vendingMachine.js"></script>
+
+  </body>
+</html>
